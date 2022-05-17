@@ -68,7 +68,7 @@ for fname in ids:
 
             child_name = SubElement(child_obj, 'name')
             if len(x) == 6:
-                x[1] = x[0] + x[1]
+                x[1] = x[0] + " " + x[1]
                 x = numpy.roll(x,-1)[:-1]
             child_name.text = x[0] #name
 
